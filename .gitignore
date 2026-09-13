@@ -1,0 +1,33 @@
+# Unity 생성 폴더
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Mm]emoryCaptures/
+/[Uu]serSettings/
+
+# IDE
+.idea/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+
+# macOS
+.DS_Store
+
+# Mono 크래시 덤프
+mono_crash.*
+
+# 에이전트 작업 상태 (커밋 금지)
+.omc/
+.serena/
+
+# UPM 의 Samples~ 폴더는 반드시 커밋되어야 한다.
+# 전역 gitignore 의 Emacs 백업 패턴(*~)이 이 폴더를 제외하므로 명시적으로 해제한다.
+!**/Samples~/
+!**/Samples~/**

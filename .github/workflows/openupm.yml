@@ -1,0 +1,25 @@
+name: OpenUPM
+
+"on":
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "OpenUPM에 스캔을 요청할 릴리스 태그"
+        required: true
+        type: string
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: openupm/openupm-action@v1
+        with:
+          package: com.zzamjak.christmaslights
+          tag: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}

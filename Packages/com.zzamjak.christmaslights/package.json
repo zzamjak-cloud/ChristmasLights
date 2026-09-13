@@ -1,0 +1,37 @@
+{
+  "name": "com.zzamjak.christmaslights",
+  "displayName": "ChristmasLights",
+  "version": "1.0.0",
+  "unity": "6000.0",
+  "description": "스프라이트/UI 이미지 한 장에서 전구마다 서로 다른 타이밍으로 색이 순환하는 크리스마스 조명 효과입니다. RGBA 채널을 따로 그릴 필요 없이 전구 자리를 흰색으로 칠한 흑백 마스크 한 장만 준비하면, 에디터 베이커가 플러드 필로 전구 덩어리를 자동 분리해 ID 맵을 굽습니다. 색은 Unity Gradient 하나로 지정하며 색 개수 제한이 없고, Random·Chase·Wave·Sync 네 가지 모션과 개별 트윙클을 제공합니다. HDR Emissive 출력으로 URP Bloom 과 연동되고, 시간 진행은 셰이더가 담당해 런타임 CPU 비용이 0 입니다. Play 모드에 들어가지 않고 씬 뷰에서 확인하는 60초 미리보기 버튼을 포함합니다.",
+  "documentationUrl": "https://github.com/zzamjak-cloud/ChristmasLights",
+  "changelogUrl": "https://github.com/zzamjak-cloud/ChristmasLights/blob/main/Packages/com.zzamjak.christmaslights/CHANGELOG.md",
+  "licensesUrl": "https://github.com/zzamjak-cloud/ChristmasLights/blob/main/Packages/com.zzamjak.christmaslights/LICENSE.md",
+  "license": "GPL-3.0-only",
+  "author": {
+    "name": "zzamjak",
+    "url": "https://github.com/zzamjak-cloud"
+  },
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "17.0.4",
+    "com.unity.ugui": "2.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "Christmas Tree Sample",
+      "description": "트리 3그루(Random / Chase / Random+Twinkle)와 UI Image(Wave) 데모 씬. 트리 아트·전구 마스크·ID 맵 포함",
+      "path": "Samples~/ChristmasLightsSample"
+    }
+  ],
+  "keywords": [
+    "ChristmasLights",
+    "Sprite",
+    "UI",
+    "Shader",
+    "Gradient",
+    "Twinkle",
+    "URP",
+    "Mobile",
+    "Effect"
+  ]
+}
